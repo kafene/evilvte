@@ -1,26 +1,25 @@
-/* Use // to disable options                                                  */
+/* Use // to disable options */
 
-#define    BACKGROUND_IMAGE       ".config/evilvte/background.png"
-// #define BACKGROUND_SATURATION  0.4
-// #define BACKGROUND_SCROLLABLE  TRUE
-// #define BACKGROUND_TINT_COLOR  "black"
-// #define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
-// #define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
-// #define BACKSPACE_KEY /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
-                         /*          DELETE_SEQUENCE                          */
-// #define DELETE_KEY    /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
-                         /*          DELETE_SEQUENCE                          */
-// #define BELL_AUDIBLE           TRUE
-// #define BELL_VISIBLE           TRUE
-// #define BELL_URGENT            TRUE
-// #define BUTTON_ORDER_BY_RCFILE TRUE
-// #define CLOSE_DIALOG           TRUE  /* Dialog to confirm close event      */
-// #define CLOSE_SAFELY           TRUE  /* Do not kill running applications   */
-// #define COLOR_BACKGROUND       "white"
-// #define COLOR_FOREGROUND       "#000000"
-// #define COLOR_STYLE   /* Options: LINUX, RXVT, TANGO, XTERM, ZENBURN,      */
-                         /*          ZENBURN_DARK, SOLARIZED_DARK,            */
-                         /*          SOLARIZED_LIGHT, HOLO, USER_CUSTOM       */
+// #define BACKGROUND_IMAGE ".config/evilvte/background.png"
+#define BACKGROUND_SATURATION  0.05
+#define BACKGROUND_SCROLLABLE  TRUE
+#define BACKGROUND_TINT_COLOR  "#000000"
+// #define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background */
+#define BACKGROUND_OPACITY TRUE  /* True transparent background */
+#define BACKSPACE_KEY AUTO /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,  DELETE_SEQUENCE */
+#define DELETE_KEY AUTO /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY, DELETE_SEQUENCE */
+#define BELL_AUDIBLE TRUE
+#define BELL_VISIBLE TRUE
+// #define BELL_URGENT TRUE
+#define BUTTON_ORDER_BY_RCFILE TRUE
+#define CLOSE_DIALOG TRUE /* Dialog to confirm close event */
+#define CLOSE_SAFELY TRUE /* Do not kill running applications */
+// #define COLOR_BACKGROUND "white"
+// #define COLOR_FOREGROUND "#000000"
+#define COLOR_STYLE SOLARIZED_DARK  /* Options: LINUX, RXVT, TANGO, XTERM, ZENBURN, ZENBURN_DARK, SOLARIZED_DARK, SOLARIZED_LIGHT, HOLO, USER_CUSTOM */
+// #define COLOR_TEXT_BOLD "red"
+// #define COLOR_TEXT_DIM "#FFFF00"
+// #define COLOR_TEXT_HIGHLIGHTED "green"
 // #define USER_COLOR_00 0x1b1d1e /* black dark    */
 // #define USER_COLOR_08 0x505354 /* black light   */
 // #define USER_COLOR_01 0xf92672 /* red dark      */
@@ -38,62 +37,59 @@
 // #define USER_COLOR_07 0xccccc6 /* white dark    */
 // #define USER_COLOR_15 0xf8f8f2 /* white light   */
 
-// #define COLOR_TEXT_BOLD        "red"
-// #define COLOR_TEXT_DIM         "#FFFF00"
-// #define COLOR_TEXT_HIGHLIGHTED "green"
-// #define COMMAND_AT_ROOT_WINDOW TRUE  /* -r option, run in root window      */
-// #define COMMAND_COLOR_FG       TRUE  /* -fg option, foreground color       */
-// #define COMMAND_COLOR_BG       TRUE  /* -bg option, background color       */
-// #define COMMAND_SATURATION     TRUE  /* -sa option, saturation level       */
-// #define COMMAND_DOCK_MODE      TRUE  /* -d option, run as a dock           */
-#define    COMMAND_EXEC_PROGRAM   TRUE  /* -e option, execute program         */
-// #define COMMAND_FULLSCREEN     TRUE  /* -f option, init in fullscreen mode */
-// #define COMMAND_FONT           TRUE  /* -fn option, to assign font & size  */
-// #define COMMAND_GEOMETRY       TRUE  /* -g +X+Y option, to assign geometry */
-// #define COMMAND_LOGIN_SHELL    TRUE  /* -ls option, to enable login shell  */
-// #define COMMAND_SET_TITLE      TRUE  /* -T or -title to set program title  */
-// #define COMMAND_SHOW_HELP      TRUE  /* -h option, show help               */
-#define    COMMAND_SHOW_OPTIONS   TRUE  /* -o option, show build-time options */
-#define    COMMAND_SHOW_VERSION   TRUE  /* -v option, show program version    */
-// #define COMMAND_TAB_NUMBERS    TRUE  /* -[2-9] options, to set tab numbers */
-// #define CURSOR_BLINKS          TRUE
+#define COMMAND_AT_ROOT_WINDOW TRUE  /* -r option, run in root window      */
+#define COMMAND_COLOR_FG       TRUE  /* -fg option, foreground color       */
+#define COMMAND_COLOR_BG       TRUE  /* -bg option, background color       */
+#define COMMAND_SATURATION     TRUE  /* -sa option, saturation level       */
+#define COMMAND_DOCK_MODE      TRUE  /* -d option, run as a dock           */
+#define COMMAND_EXEC_PROGRAM   TRUE  /* -e option, execute program         */
+#define COMMAND_FULLSCREEN     TRUE  /* -f option, init in fullscreen mode */
+#define COMMAND_FONT           TRUE  /* -fn option, to assign font & size  */
+#define COMMAND_GEOMETRY       TRUE  /* -g +X+Y option, to assign geometry */
+#define COMMAND_LOGIN_SHELL    TRUE  /* -ls option, to enable login shell  */
+#define COMMAND_SET_TITLE      TRUE  /* -T or -title to set program title  */
+#define COMMAND_SHOW_HELP      TRUE  /* -h option, show help               */
+#define COMMAND_SHOW_OPTIONS   TRUE  /* -o option, show build-time options */
+#define COMMAND_SHOW_VERSION   TRUE  /* -v option, show program version    */
+#define COMMAND_TAB_NUMBERS    TRUE  /* -[2-9] options, to set tab numbers */
+#define CURSOR_BLINKS          TRUE
 // #define CURSOR_COLOR           "blue"
-// #define CURSOR_SHAPE  /* Options: BLOCK, IBEAM, UNDERLINE                  */
-// #define DEFAULT_COMMAND        g_getenv("SHELL")
-// #define DEFAULT_DIRECTORY      g_get_current_dir()
-// #define DEFAULT_TERMINAL_SIZE  80x24
-// #define EXPORT_WINDOWID        TRUE
-// #define FONT                   "Monospace 10"
-// #define FONT_ANTI_ALIAS        TRUE
-// #define FONT_ENABLE_BOLD_TEXT  TRUE
-// #define MOUSE_CTRL_SATURATION  TRUE  /* Scroll left or right to adjust it  */
-// #define MOUSE_CURSOR_AUTOHIDE  TRUE
-// #define PROGRAM_ALWAYS_ON_TOP  TRUE
-// #define PROGRAM_ICON           ".config/evilvte/icon.png"
-// #define PROGRAM_WM_CLASS       TRUE
-// #define RECORD_LASTLOG         TRUE
-// #define RECORD_UTMP            TRUE
-// #define RECORD_WTMP            TRUE
-// #define SCROLL_LINES           1000  /* Negative value means unlimited     */
-// #define SCROLL_ON_KEYSTROKE    TRUE
-// #define SCROLL_ON_OUTPUT       TRUE
-#define    SCROLLBAR              RIGHT /* Options: LEFT, RIGHT, OFF_L, OFF_R */
-// #define SHOW_WINDOW_BORDER     TRUE
-// #define SHOW_WINDOW_DECORATED  TRUE
-#define    SHOW_WINDOW_ICON       TRUE
-#define    STATUS_BAR             TRUE
-// #define WINDOW_TITLE_DYNAMIC   TRUE  /* for xterm escape sequences         */
-#define    WORD_CHARS             "-A-Za-z0-9_$.+!*(),;:@&=?/~#%"
+#define CURSOR_SHAPE           BLOCK /* Options: BLOCK, IBEAM, UNDERLINE                  */
+// #define DEFAULT_COMMAND         g_getenv("SHELL")
+// #define DEFAULT_DIRECTORY       g_get_current_dir()
+#define DEFAULT_TERMINAL_SIZE   130x42
+#define EXPORT_WINDOWID         TRUE
+#define FONT                    "Fantasque Sans Mono Regular 12"
+#define FONT_ANTI_ALIAS         TRUE
+#define FONT_ENABLE_BOLD_TEXT   TRUE
+#define MOUSE_CTRL_SATURATION   TRUE  /* Scroll left or right to adjust it  */
+#define MOUSE_CURSOR_AUTOHIDE   FALSE
+#define PROGRAM_ALWAYS_ON_TOP   FALSE
+#define PROGRAM_ICON            ".config/evilvte/icon.png"
+#define PROGRAM_WM_CLASS        TRUE
+#define RECORD_LASTLOG          TRUE
+#define RECORD_UTMP             TRUE
+#define RECORD_WTMP             TRUE
+#define SCROLL_LINES            -1  /* Negative value means unlimited     */
+#define SCROLL_ON_KEYSTROKE     TRUE
+#define SCROLL_ON_OUTPUT        FALSE
+#define SCROLLBAR               RIGHT /* Options: LEFT, RIGHT, OFF_L, OFF_R */
+#define SHOW_WINDOW_BORDER      FALSE
+#define SHOW_WINDOW_DECORATED   TRUE
+#define SHOW_WINDOW_ICON        TRUE
+#define STATUS_BAR              FALSE /* Default to off */
+#define WINDOW_TITLE_DYNAMIC    TRUE  /* for xterm escape sequences         */
+#define WORD_CHARS              "-A-Za-z0-9_$.+!*(),;:@&=?/~#%"
 
-#define    MENU                   TRUE
-// #define MENU_ENCODING_LIST     "BIG-5", "Default Encoding", "GBK", "EUC-JP"
-// #define MENU_MATCH_STRING_EXEC "firefox"
-// #define      MATCH_STRING_L    "firefox" /* left click to open without menu*/
-// #define      MATCH_STRING_M    "firefox" /* middle click to open           */
-// #define      MATCH_STRING_HTTP TRUE      /* Detect http(s) and ftp(s)      */
-// #define      MATCH_STRING_MAIL TRUE      /* Detect mailto:                 */
-// #define      MATCH_STRING_FILE TRUE      /* Detect file:///                */
-// #define MENU_CUSTOM            "Copy", "Separator", "Paste", "Separator"
+#define MENU                    TRUE
+// #define MENU_ENCODING_LIST   "Default Encoding", "UTF-8"
+#define MENU_MATCH_STRING_EXEC  "xdg-open"
+// #define MATCH_STRING_L          "xdg-open" /* left click to open without menu */
+#define MATCH_STRING_M          "xdg-open" /* middle click to open */
+#define MATCH_STRING_HTTP       TRUE /* Detect http(s) and ftp(s) */
+#define MATCH_STRING_MAIL       TRUE /* Detect mailto: */
+#define MATCH_STRING_FILE       TRUE /* Detect file:/// */
+#define MENU_CUSTOM             "Copy", "Paste", "Select all", "Select font", "Separator", "Zoom in", "Zoom out", "Zoom default", "Separator", "Submenu input method",  "Submenu encoding list", "Separator", "Toggle scrollbar", "Toggle status bar", "Toggle hotkeys locking", "Separator", "Adjust saturation", "Separator", "Quit"
            /* Options: "Copy",         "Zoom in",       "Add tab",
             *          "Paste",        "Zoom out",      "Remove tab",
             *          "Select all",   "Zoom default",  "New window",
@@ -113,22 +109,32 @@
             *          "Auto-click" (when there is only one effective menu item)
             */
 
-#define    TAB                    TRUE
-// #define TAB_BORDER             0
-// #define TAB_CLOSE_BUTTON       TRUE
-// #define TAB_EXPANDED_WIDTH     TRUE
-// #define TAB_LABEL              "Page %u" /* %u will be replaced by numbers */
-// #define TAB_LABEL_DYNAMIC      TRUE      /* for xterm escape sequences     */
-// #define TAB_LABEL_CUSTOM       "One", "Two", "Three", "Four", "Five", "Six"
-// #define TAB_NEW_PATH_EQUAL_OLD TRUE
-// #define TAB_NEW_TAB_AT_TAB_ONE TRUE   /* New tab will always the first tab */
-// #define TAB_REORDERABLE        TRUE
-// #define TAB_SHOW_INFO_AT_TITLE TRUE
-// #define TABBAR                 TRUE
-// #define TABBAR_PLACE           TOP    /* Options: TOP, BOTTOM, LEFT, RIGHT */
-// #define TABBAR_AUTOHIDE        TRUE
-// #define TABBAR_SCROLLABLE      TRUE
-// #define TABBAR_MENU_SELECT_TAB TRUE
+#define    TAB                       FALSE
+// #define TAB_BORDER                   0
+// #define TAB_CLOSE_BUTTON             TRUE
+// #define TAB_EXPANDED_WIDTH           TRUE
+// #define TAB_LABEL                    "Page %u" /* %u will be replaced by numbers */
+// #define TAB_LABEL_DYNAMIC            TRUE      /* for xterm escape sequences */
+// #define TAB_LABEL_CUSTOM             "One", "Two", "Three", "Four", "Five", "Six"
+// #define TAB_NEW_PATH_EQUAL_OLD       TRUE
+// #define TAB_NEW_TAB_AT_TAB_ONE       TRUE   /* New tab will always the first tab */
+// #define TAB_REORDERABLE              TRUE
+// #define TAB_SHOW_INFO_AT_TITLE       TRUE
+// #define TABBAR                       TRUE
+// #define TABBAR_PLACE                 TOP    /* Options: TOP, BOTTOM, LEFT, RIGHT */
+// #define TABBAR_AUTOHIDE              TRUE
+// #define TABBAR_SCROLLABLE            TRUE
+// #define TABBAR_MENU_SELECT_TAB       TRUE
+// #define HOTKEY_TAB_ADD               CTRL_SHIFT(GDK_T) || CTRL_SHIFT(GDK_t)
+// #define HOTKEY_TAB_REMOVE            CTRL_SHIFT(GDK_W) || CTRL_SHIFT(GDK_w)
+// #define HOTKEY_TAB_PREVIOUS          CTRL(GDK_Page_Up)
+// #define HOTKEY_TAB_NEXT              CTRL(GDK_Page_Down)
+// #define HOTKEY_TAB_FIRST             CTRL(GDK_Home)
+// #define HOTKEY_TAB_LAST              CTRL(GDK_End)
+// #define HOTKEY_TAB_EDIT_LABEL        CTRL_SHIFT(GDK_E) || CTRL_SHIFT(GDK_e)
+// #define HOTKEY_TOGGLE_TABBAR         CTRL(GDK_Up)
+// #define ALT_NUMBER_GO_TO_TAB_NUMBER  TRUE
+// #define CTRL_NUMBER_GO_TO_TAB_NUMBER TRUE
 
 /* Use || for multiple hotkeys.
  *
@@ -145,49 +151,39 @@
  *
  * See /usr/include/gtk-?.0/gdk/gdkkeysyms.h for GDK_* definitions.           */
 
-#define    HOTKEY                       TRUE
-// #define HOTKEY_COPY                  CTRL_SHIFT(GDK_C) || CTRL_SHIFT(GDK_c)
-// #define HOTKEY_PASTE                 CTRL_SHIFT(GDK_V) || CTRL_SHIFT(GDK_v)
-// #define HOTKEY_SELECT_ALL            CTRL_SHIFT(GDK_S) || CTRL_SHIFT(GDK_s)
-// #define HOTKEY_COLOR_BACKGROUND      CTRL_SHIFT(GDK_B) || CTRL_SHIFT(GDK_b)
-// #define HOTKEY_EDIT_ENCODING         CTRL_SHIFT(GDK_U) || CTRL_SHIFT(GDK_u)
-// #define HOTKEY_FONT_BIGGER           CTRL(GDK_KP_Add)
-// #define HOTKEY_FONT_SMALLER          CTRL(GDK_KP_Subtract)
-// #define HOTKEY_FONT_DEFAULT_SIZE     CTRL(GDK_KP_Insert)
-// #define HOTKEY_FONT_SELECT           CTRL_SHIFT(GDK_F) || CTRL_SHIFT(GDK_f)
-// #define HOTKEY_MIMIC_SCROLL_UP       CTRL_SHIFT(GDK_K) || CTRL_SHIFT(GDK_k)
-// #define HOTKEY_MIMIC_SCROLL_DOWN     CTRL_SHIFT(GDK_J) || CTRL_SHIFT(GDK_j)
-// #define HOTKEY_OPEN_NEW_WINDOW       CTRL_SHIFT(GDK_N) || CTRL_SHIFT(GDK_n)
-// #define HOTKEY_RESET_TERMINAL        CTRL_SHIFT(GDK_R) || CTRL_SHIFT(GDK_r)
-// #define HOTKEY_RESET_AND_CLEAR       CTRL_SHIFT(GDK_A) || CTRL_SHIFT(GDK_a)
-// #define HOTKEY_SATURATION_DIALOG     CTRL_SHIFT(GDK_X) || CTRL_SHIFT(GDK_x)
-// #define HOTKEY_SATURATION_MORE       CTRL(GDK_KP_Multiply)
-// #define HOTKEY_SATURATION_LESS       CTRL(GDK_KP_Divide)
-// #define HOTKEY_SCROLL_ONE_PAGE_UP    CTRL(GDK_k) || CTRL(GDK_K)
-// #define HOTKEY_SCROLL_ONE_PAGE_DOWN  CTRL(GDK_j) || CTRL(GDK_J)
-// #define HOTKEY_SEARCH_STRING         CTRL_SHIFT(GDK_Q) || CTRL_SHIFT(GDK_q)
-// #define HOTKEY_SEARCH_PREVIOUS       CTRL_SHIFT(GDK_G) || CTRL_SHIFT(GDK_g)
-// #define HOTKEY_SEARCH_NEXT           CTRL(GDK_g) || CTRL(GDK_G)
-// #define        SEARCH_CASE_SENSITIVE TRUE
-#define    HOTKEY_TAB_ADD               CTRL_SHIFT(GDK_T) || CTRL_SHIFT(GDK_t)
-#define    HOTKEY_TAB_REMOVE            CTRL_SHIFT(GDK_W) || CTRL_SHIFT(GDK_w)
-#define    HOTKEY_TAB_PREVIOUS          CTRL(GDK_Page_Up)
-#define    HOTKEY_TAB_NEXT              CTRL(GDK_Page_Down)
-// #define HOTKEY_TAB_FIRST             CTRL(GDK_Home)
-// #define HOTKEY_TAB_LAST              CTRL(GDK_End)
-// #define ALT_NUMBER_GO_TO_TAB_NUMBER  TRUE
-// #define CTRL_NUMBER_GO_TO_TAB_NUMBER TRUE
-// #define HOTKEY_TAB_EDIT_LABEL        CTRL_SHIFT(GDK_E) || CTRL_SHIFT(GDK_e)
-// #define HOTKEY_TOGGLE_ANTI_ALIAS     CTRL_SHIFT(GDK_L) || CTRL_SHIFT(GDK_l)
+#define HOTKEY                       TRUE
+#define HOTKEY_COPY                  CTRL_SHIFT(GDK_C) || CTRL_SHIFT(GDK_c)
+#define HOTKEY_PASTE                 CTRL_SHIFT(GDK_V) || CTRL_SHIFT(GDK_v)
+#define HOTKEY_SELECT_ALL            CTRL_SHIFT(GDK_S) || CTRL_SHIFT(GDK_s)
+#define HOTKEY_COLOR_BACKGROUND      CTRL_SHIFT(GDK_B) || CTRL_SHIFT(GDK_b)
+#define HOTKEY_EDIT_ENCODING         CTRL_SHIFT(GDK_U) || CTRL_SHIFT(GDK_u)
+#define HOTKEY_FONT_BIGGER           CTRL_SHIFT(GDK_plus)
+#define HOTKEY_FONT_SMALLER          CTRL_SHIFT(GDK_underscore)
+#define HOTKEY_FONT_DEFAULT_SIZE     CTRL_SHIFT(GDK_parenright)
+#define HOTKEY_FONT_SELECT           CTRL_SHIFT(GDK_E) || CTRL_SHIFT(GDK_e)
+#define HOTKEY_MIMIC_SCROLL_UP       CTRL_SHIFT(GDK_K) || CTRL_SHIFT(GDK_k)
+#define HOTKEY_MIMIC_SCROLL_DOWN     CTRL_SHIFT(GDK_J) || CTRL_SHIFT(GDK_j)
+#define HOTKEY_OPEN_NEW_WINDOW       CTRL_SHIFT(GDK_N) || CTRL_SHIFT(GDK_n)
+#define HOTKEY_RESET_TERMINAL        CTRL_SHIFT(GDK_R) || CTRL_SHIFT(GDK_r)
+#define HOTKEY_RESET_AND_CLEAR       CTRL_SHIFT(GDK_A) || CTRL_SHIFT(GDK_a)
+#define HOTKEY_SATURATION_DIALOG     CTRL_SHIFT(GDK_X) || CTRL_SHIFT(GDK_x)
+#define HOTKEY_SATURATION_MORE       CTRL_SHIFT(GDK_Page_Up)
+#define HOTKEY_SATURATION_LESS       CTRL_SHIFT(GDK_Page_Down)
+#define HOTKEY_SCROLL_ONE_PAGE_UP    CTRL(GDK_k) || CTRL(GDK_K) || SHIFT(GDK_Page_Up)
+#define HOTKEY_SCROLL_ONE_PAGE_DOWN  CTRL(GDK_j) || CTRL(GDK_J) || SHIFT(GDK_Page_Down)
+#define HOTKEY_SEARCH_STRING         CTRL_SHIFT(GDK_F) || CTRL_SHIFT(GDK_f)
+#define HOTKEY_SEARCH_PREVIOUS       CTRL_SHIFT(GDK_G) || CTRL_SHIFT(GDK_g)
+#define HOTKEY_SEARCH_NEXT           CTRL(GDK_g) || CTRL(GDK_G)
+#define SEARCH_CASE_SENSITIVE        FALSE
+#define HOTKEY_TOGGLE_ANTI_ALIAS     CTRL_SHIFT(GDK_L) || CTRL_SHIFT(GDK_l)
+#define HOTKEY_TOGGLE_HOTKEYS        CTRL_SHIFT(GDK_BackSpace)
+#define HOTKEY_TOGGLE_SCROLLBAR      CTRL(GDK_Right)
+#define HOTKEY_TOGGLE_STATUS_BAR     CTRL(GDK_Down)
+#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_Left)
+#define TOGGLE_BG_ORDER              "Image", "Transparent", "No background", "Opacity"
 // #define HOTKEY_TOGGLE_DECORATED      CTRL(GDK_Left)
 // #define HOTKEY_TOGGLE_FULLSCREEN     CTRL_SHIFT(GDK_M) || CTRL_SHIFT(GDK_m)
-// #define HOTKEY_TOGGLE_HOTKEYS        CTRL(GDK_quoteleft)
 // #define HOTKEY_TOGGLE_ON_TOP         CTRL_SHIFT(GDK_O) || CTRL_SHIFT(GDK_o)
-// #define HOTKEY_TOGGLE_SCROLLBAR      CTRL(GDK_Right)
-// #define HOTKEY_TOGGLE_STATUS_BAR     CTRL(GDK_Down)
-// #define HOTKEY_TOGGLE_TABBAR         CTRL(GDK_Up)
-// #define HOTKEY_TOGGLE_BACKGROUND     CTRL(GDK_KP_Delete)
-// #define TOGGLE_BG_ORDER    "Image", "Transparent", "No background", "Opacity"
 
 // #define LABEL_DEFAULT_ENCODING       "_Default Encoding"
 // #define LABEL_DIALOG_BACKGROUND_TINT "_Background tint color"
