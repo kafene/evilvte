@@ -64,7 +64,7 @@ if [ "$with_gtk" != "2.0" ] && [ "$with_gtk" != "3.0" ]; then
   with_gtk=2.0
   VTEINC=`pkg-config --cflags vte 2> /dev/null`
   if [ $? != 0 ]; then
-    VTEINC=`pkg-config --cflags vte-2.90 2> /dev/null`
+    VTEINC=`pkg-config --cflags vte-2.91 2> /dev/null`
     [ $? = 0 ] && with_gtk=3.0
   fi
 fi
@@ -81,10 +81,10 @@ if [ "$with_gtk" = "2.0" ]; then
 fi
 
 if [ "$with_gtk" = "3.0" ]; then
-  VTEINC=`pkg-config --cflags vte-2.90 2> /dev/null`
-  [ $? != 0 ] && exec pkg-config --cflags vte-2.90
-  LIBS_VTE="-lgdk-3 -lgtk-3 -lvte2_90"
-  LIBS_VTE_L=`pkg-config --libs-only-L vte-2.90 2> /dev/null`
+  VTEINC=`pkg-config --cflags vte-2.91 2> /dev/null`
+  [ $? != 0 ] && exec pkg-config --cflags vte-2.91
+  LIBS_VTE="-lgdk-3 -lgtk-3 -lvte2.91"
+  LIBS_VTE_L=`pkg-config --libs-only-L vte-2.91 2> /dev/null`
   ln -sf gtk3.c src/evilvte.c
 fi
 
@@ -100,7 +100,7 @@ fi
   [ "$SUSE_LD" != "" ] && $DO_ECHO "OS    :" [1m[33mSUSE[m
   [ "$ARCH_UNAME" != "" ] && $DO_ECHO "OS    :" [1m[33mArch Linux[m
   [ "$with_gtk" = "2.0" ] && $DO_ECHO "VTE   :" [1m[33m`pkg-config --modversion vte`[m
-  [ "$with_gtk" = "3.0" ] && $DO_ECHO "VTE   :" [1m[33m`pkg-config --modversion vte-2.90`[m
+  [ "$with_gtk" = "3.0" ] && $DO_ECHO "VTE   :" [1m[33m`pkg-config --modversion vte-2.91`[m
   $DO_ECHO "GTK+  :" [1m[33m`pkg-config --modversion gtk+-$with_gtk`[m
   $DO_ECHO Prefix: [1m[33m$prefix[m
   $DO_ECHO -n "Configuration: "
